@@ -1,0 +1,200 @@
+.container {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  font-family: "Trebuchet MS", sans-serif;
+  // background-color: #acaaaa;
+
+  .title {
+    margin: 20px;
+
+    p {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search {
+    display: flex;
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .buttonTop {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .addButton {
+    border-radius: 5px;
+    background-color: #50c771;
+  }
+
+  .templateButton {
+    color: blue;
+    border: solid 1px blue;
+    border-radius: 5px;
+  }
+
+  .form {
+    width: 90%;
+    margin: auto;
+
+    .row3SB {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .item {
+        width: 30%;
+        border: 1px solid #333;
+        padding: 10px;
+
+        .successMessage {
+          color: #198754;
+          font-weight: 400;
+        }
+
+        .errorMessage {
+          color: #dc3545;
+          font-weight: 400;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        input {
+          height: 30px;
+          width: 100%;
+        }
+
+        select {
+          height: 30px;
+          width: 100%;
+        }
+
+        .rowForm {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          select {
+            height: 30px;
+          }
+
+          button {
+            margin-left: 5%;
+            height: 30px;
+            width: 60px;
+            padding: 6x 12px;
+          }
+        }
+      }
+    }
+
+    .formAction {
+      margin: 20px 0;
+      display: flex;
+      justify-content: right;
+      gap: 20px;
+
+      button {
+        padding: 6px 12px;
+      }
+    }
+  }
+
+  .danhSach {
+    padding: 20px 1%;
+
+    .rowSpaceBettween {
+      display: flex;
+      justify-content: space-between;
+
+      select {
+        width: 50px;
+        height: 25px;
+      }
+
+      input {
+        width: 250px;
+        height: 25px;
+        padding-left: 10px;
+        font-size: 19px;
+      }
+    }
+
+    .table {
+      cursor: pointer;
+      margin-bottom: 15px;
+
+      th {
+        background-color: #84abcd;
+      }
+    }
+
+    .page {
+      margin-top: 20px;
+      display: flex;
+      justify-content: right;
+
+      ul {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        li {
+          list-style: none;
+
+          button {
+            padding: 7px 12px;
+            border: none;
+            outline: 1px solid #acaaaa;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+  }
+
+  .action {
+    display: flex;
+    gap: 5px;
+  }
+
+  .deleteText {
+    color: red;
+  }
+
+  .displayPromotionD {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgba(0, 0, 0, 0.8);
+    background-color: #f1f1f1;
+    // padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+}

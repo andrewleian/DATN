@@ -1,0 +1,345 @@
+.container {
+    // background-color: #303030;
+    // height: 30px;
+    position: relative;
+}
+
+.ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 60px 10px 60px;
+    background-color: #303030;
+}
+
+.li {
+    list-style: none;
+    display: inline;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #ff5f17;
+}
+
+.link:hover {
+    color: #ff5f17;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.displayLogin {
+
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin: auto;
+
+    .btnExit {
+        border: none;
+        background: none;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .formLogin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 49%;
+        margin: auto;
+        padding: 2%;
+        background-color: #fff;
+        border-radius: 20px;
+        padding-bottom: 90px;
+
+
+
+        .rowLogin,
+        .rowSignUp {
+
+            display: flex;
+
+            .col1 {
+                width: 50%;
+                position: relative;
+
+                img {
+                    display: block;
+                    margin-top: 60px;
+                    margin-left: 50px;
+                    width: 68%;
+                }
+
+                p {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -35px;
+                    transform: translateX(-50%);
+                    cursor: pointer;
+                    font-weight: 400;
+                }
+
+                p:hover {
+                    color: #ff5f17;
+                }
+            }
+
+            .col2 {
+                margin-top: 60px;
+                padding-left: 60px;
+                width: 50%;
+                position: relative;
+
+                .title {
+                    // text-align: left;
+                    font-size: 39px;
+                    font-weight: 800;
+                    margin-bottom: 35px;
+                }
+
+                .form {
+                    .formGroup {
+                        .inputWithIcon {
+                            margin-top: 25px;
+                            position: relative;
+
+                            .iconLeft {
+                                i {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 10px;
+                                    transform: translateY(-50%);
+                                    padding-bottom: 10px;
+                                }
+                            }
+
+
+
+                            input {
+                                width: 84%;
+                                border-top: 0;
+                                border-left: 0;
+                                border-right: 0;
+                                border-bottom: 1px solid black;
+                                outline: none;
+                                background: none;
+                                color: black;
+                                padding-left: 30px;
+                                padding-bottom: 10px;
+
+                            }
+
+                            input::placeholder {
+                                font-size: 14px;
+                                /* Điều chỉnh font size theo mong muốn */
+                            }
+
+                            .iconRightCorrect {
+                                i {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 60px;
+                                    transform: translateY(-50%);
+                                    padding-bottom: 10px;
+                                    color: #007c00;
+                                }
+                            }
+
+                            .iconRightWrong {
+                                i {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 60px;
+                                    transform: translateY(-50%);
+                                    padding-bottom: 10px;
+                                    color: red;
+                                }
+                            }
+
+                            .iconRightPassword {
+                                i {
+                                    position: absolute;
+                                    top: 50%;
+                                    right: 60px;
+                                    transform: translateY(-50%);
+                                    padding-bottom: 10px;
+                                }
+                            }
+
+
+                        }
+
+                        .errorMessage {
+                            color: red;
+                        }
+                    }
+
+                    .formGroupCBX {
+                        margin-top: 30px;
+
+                        label {
+                            margin-left: 5px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .formGroupBtn {
+                        margin-top: 40px;
+
+                        button {
+                            padding: 16px 38px;
+                            border-radius: 5px;
+                            color: white;
+                            background: #6dabe4;
+                            border: none;
+                            font-weight: 400;
+                            font-size: 15px;
+                            cursor: pointer;
+
+                            /* Hiệu ứng hover */
+                            transition: background 0.2s ease-in-out;
+                        }
+
+                        /* Hiệu ứng hover */
+                        button:hover {
+                            background: #5c92c8;
+                        }
+                    }
+                }
+
+                .forgotPassword {
+                    // margin-top: 94px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -35px;
+                    transform: translateX(-50%);
+                    cursor: pointer;
+                    font-weight: 400;
+                }
+
+                .forgotPassword:hover {
+                    color: #ff5f17;
+                }
+            }
+
+
+        }
+    }
+
+
+    .rowSignUp {
+        .col1 {
+            width: 50%;
+            margin-left: 50px;
+            margin-top: 60px;
+
+            img {
+                display: block;
+
+                width: 68%;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 60px;
+                cursor: pointer;
+            }
+        }
+
+        .formGroupCBX {
+            margin-top: 30px;
+
+            label {
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
+    }
+
+
+}
+
+//css modal
+
+.modalWrapper {
+    position: absolute;
+    z-index: 99999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.15);
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modal-wrapper p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btnSave {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+}
+
+// thông báo lỗi
+.message {
+    margin-top: 5px;
+    color: red;
+}

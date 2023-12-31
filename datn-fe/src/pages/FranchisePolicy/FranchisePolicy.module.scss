@@ -1,0 +1,26 @@
+.container {
+    width: 66%;
+    margin: auto;
+    margin-bottom: 55px;
+
+    .title {
+        padding: 40px 0;
+        margin-bottom: 30px;
+        border: dashed 2px #a3a3a3;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+
+        p {
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    p{
+        font-size: 19px;
+        line-height: 25px;
+    }
+}

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 48px;
+    }
+  </style>
+</head>
+<body>
+<!--Nội dung email muốn gửi-->
+<!--có thể tạo ra các template tương tự để phục vụ cho việc gửi email khác như đơn hàng thành công, quên mật khẩu, đăng kí,..-->
+<p>Xin chào bạn bạn đã mua hàng tại cửa hàng giày SHOE SHOE</p>
+<p>Bạn có thể đăng nhập vào website của mua hàng online của cửa hàng chúng tôi bằng thông tin dưới đây</p>
+
+<p th:text="${'Tên tài khoản: ' + name}"></p>
+<p th:text="${'Mật khẩu:  ' + password}"></p>
+
+<p></p>
+<p>Đây là thông tin nhạy cảm vui lòng bảo mật</p>
+<p>Đây là email tự động vui lòng không trả lời.</p>
+</body>
+</html>

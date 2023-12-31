@@ -1,0 +1,49 @@
+.container {
+  width: 80%;
+  margin: 20px auto auto auto;
+  // margin: auto;
+  // position: relative;
+  // margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  background-color: #b5c6e0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  // display: flex;
+}
+.image {
+  width: 30%;
+  margin-right: 16px;
+  padding: 15px;
+}
+
+.info {
+  width: 70%;
+  padding: 15px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.blockInput {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  margin-right: 16px;
+}
+.titleInput {
+  width: 200px;
+  font-weight: bold;
+}
+.input {
+  width: 200%;
+}
+.bottomButton {
+  // display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  // flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}

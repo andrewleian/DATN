@@ -1,0 +1,196 @@
+.container {
+    margin-bottom: 60px;
+
+    .banner {
+        height: 800px;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: 100vw;
+            object-fit: cover;
+        }
+    }
+
+    .homeCollection {
+        width: 66%;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+
+
+        .item {
+            width: 48%;
+
+            .img {
+                height: 0;
+                padding-top: 56.25%;
+                position: relative;
+
+                width: 100%;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+            }
+
+            .title {
+                margin-top: 30px;
+
+                p {
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+
+                p:hover {
+                    cursor: pointer;
+                    color: #f25022;
+                }
+            }
+
+            .description {
+                margin-top: 10px;
+                line-height: 23px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .homeBuy {
+        width: 66%;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 80px;
+
+        .homeBuyTitle {
+            p {
+                text-align: center;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                margin-top: 45px;
+                width: 32.7%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .itemGroup {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-weight: bold;
+                    text-align: center;
+                    background: rgba(0, 0, 0, 0.3);
+
+                    .title {
+                        font-size: 21px;
+                        font-weight: bold;
+                        margin-top: 50px;
+                        margin-bottom: 20px;
+                        color: rgb(249, 243, 243);
+                    }
+
+                    .sub {
+                        font-size: 18px;
+                        line-height: 27px;
+                        font-weight: bold;
+                        color: rgb(249, 243, 243);
+                    }
+
+                    p:hover {
+                        cursor: pointer;
+                        color: #f25022;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .homeNews {
+
+        width: 66%;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        .col {
+            width: 49%;
+
+
+            .homeNewsTitle {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 35px;
+
+                p {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            }
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .item {
+                    width: 47%;
+                    margin-bottom: 30px;
+
+                    img {
+                        width: 100%;
+                        cursor: pointer;
+                    }
+
+                    .title {
+                        margin: 15px 0;
+                        font-size: 21px;
+                        font-weight: bold;
+                    }
+
+                    .title:hover {
+                        cursor: pointer;
+                        color: #f25022;
+                    }
+
+                    .description {
+                        font-size: 17px;
+                    }
+
+                    .detail {
+                        font-size: 17px;
+                        margin-top: 4px;
+                        cursor: pointer;
+
+                        a {
+                            color: #f25022;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

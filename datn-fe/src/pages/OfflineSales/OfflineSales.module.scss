@@ -1,0 +1,337 @@
+// .container{
+//     width: 80%;
+//     margin: auto;
+// }
+
+.main {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+
+    input {
+        padding-left: 10px;
+    }
+
+    .col1 {
+        width: 75%;
+
+        .row1 {
+            padding: 20px 3% 0px 3%;
+            background-color: #f1f1f1;
+            border-bottom: 2px solid #a3a3a3;
+
+
+
+            .searchProducts {
+                width: 40%;
+                display: inline-flex;
+                align-items: center;
+                // justify-content: center;
+
+                button {
+                    padding: 12px 20px;
+                    border: 2px solid #808080;
+                    background-color: #808080;
+                }
+
+                input {
+                    margin-left: 10px;
+                    height: 30px;
+                    width: 70%;
+                }
+            }
+
+            .bills {
+                display: inline-block;
+                margin-left: 10px;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        list-style: none;
+                        padding: 12px 20px;
+                        border: #808080 1px solid;
+                        background-color: #808080;
+                    }
+
+                    .active {
+                        background-color: #f15e2c;
+                        border: #f15e2c 1px solid;
+                    }
+                }
+            }
+
+            .addBill {
+                float: right;
+
+                button {
+                    padding: 12px 20px;
+                    border: none;
+                    background-color: #808080;
+                }
+            }
+
+        }
+
+        .row2 {
+            background-color: #f1f1f1;
+            height: 50vh;
+            padding: 20px 3%;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                overflow-y: auto;
+            }
+
+            th,
+            td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                border: 1px solid #ddd;
+
+                img {
+                    width: 50px;
+                }
+            }
+
+            th {
+                background-color: #f15e2c;
+            }
+        }
+
+        .row3 {
+            margin-top: 30px;
+            padding: 20px 3%;
+            background-color: #f1f1f1;
+
+            .top {
+                margin: 10px 0;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 2px solid #a3a3a3;
+
+                .customer {
+
+                    display: flex;
+                    align-items: center;
+                    width: 70%;
+
+                    button {
+                        width: 30%;
+                        padding: 12px 20px;
+                        background: #808080;
+                        border: none;
+                    }
+
+                    input {
+                        margin-left: 20px;
+                        height: 30px;
+                        width: 70%;
+                    }
+
+
+                }
+
+                .employee {
+                    width: 30%;
+
+                    button {
+                        float: right;
+                        padding: 12px 20px;
+                        background: #808080;
+                        border: none;
+                    }
+                }
+            }
+
+            .col_4 {
+                display: flex;
+                justify-content: space-between;
+                margin: 30px 0;
+
+                div {
+                    float: left;
+                }
+
+                input {
+                    height: 30px;
+                }
+
+                select {
+                    height: 30px;
+
+
+                }
+
+                option {
+                    height: 30px;
+                }
+
+                button {
+                    padding: 12px 20px;
+                }
+            }
+        }
+
+    }
+
+
+
+    .col2 {
+        width: 23%;
+
+        .order {
+            background-color: #f1f1f1;
+            margin: auto;
+            border: solid 2px #a3a3a3;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+
+            p {
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+            }
+        }
+
+        .promotionCode {
+            background-color: #f1f1f1;
+            margin: auto;
+            padding: 30px 5%;
+
+            label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            input {
+                width: 68%;
+                height: 35px;
+                border-radius: 0;
+                background-color: #fff;
+                border: 1px solid #ccc;
+            }
+
+            button {
+                width: 30%;
+                height: 35px;
+                border-radius: 0;
+                background-color: #f15e2c;
+                border: none;
+                font-weight: 700;
+            }
+        }
+
+        .totalOrder {
+            background-color: #f1f1f1;
+            margin: auto;
+            padding: 40px 5% 0px 5%;
+            display: flex;
+            justify-content: space-between;
+            border: dashed 2px #a3a3a3;
+            border-bottom: 0;
+            border-left: 0;
+            border-right: 0;
+
+            p {
+                color: #808080;
+                font-size: 19px;
+                font-weight: bold;
+            }
+        }
+
+        .discount {
+            background-color: #f1f1f1;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+
+            padding: 5px 5% 40px 5%; // bug
+            border: dashed 2px #a3a3a3;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+
+            p {
+                color: #808080;
+                font-size: 19px;
+                font-weight: bold;
+            }
+
+            span {
+                color: #808080;
+                font-size: 19px;
+                font-weight: lighter;
+            }
+        }
+
+        .temporary {
+            background-color: #f1f1f1;
+            padding: 30px 5%;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-weight: bold;
+                font-size: 19px;
+            }
+
+            span {
+                font-weight: bold;
+                font-size: 23px;
+            }
+        }
+
+        .cash {
+            background-color: #f1f1f1;
+            padding: 30px 5% 0px 5%;
+            display: flex;
+            justify-content: space-between;
+
+            .cashLabel {
+                width: 35%;
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                font-weight: bold;
+
+            }
+
+            .cashInput {
+                width: 65%;
+
+                input {
+                    width: 100%;
+                    height: 35px;
+                }
+            }
+
+        }
+
+        .continueOrderBtn {
+            background-color: #f1f1f1;
+            margin: auto;
+            padding: 30px 5% 20px 5%;
+
+            button {
+                width: 100%;
+                height: 77px;
+                background-color: #f15e2c;
+                font-size: 20px;
+                font-weight: bold;
+                border: none;
+            }
+        }
+    }
+
+}

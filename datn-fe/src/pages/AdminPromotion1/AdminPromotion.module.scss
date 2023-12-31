@@ -1,0 +1,753 @@
+.container {
+
+    // background-color: #494747;
+    width: 100%;
+
+    .header {
+
+        ul {
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            li {
+                list-style: none;
+
+                button {
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .danhSach {
+        padding: 20px 1%;
+
+        .title {
+            margin-bottom: 20px;
+            color: #313435;
+            font-size: calc(1.25625rem + 0.075vw);
+            font-weight: bold;
+        }
+
+        .rowSpaceBettween {
+            // background-color: #acaaaa;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 35px;
+            align-items: center;
+
+            select,
+            input {
+                border: 1px solid rgba(0, 0, 0, 0.0625);
+                border-radius: 2px;
+                box-shadow: none;
+                height: 35px;
+                font-size: 14px;
+                padding: 5px;
+                margin-left: 5px;
+                width: 60px;
+                margin-right: 5px;
+                color: #72777a;
+                transition: all 0.2s ease-in;
+                cursor: pointer;
+            }
+
+            input {
+                width: 250px;
+            }
+
+            // input {
+            //     border: 1px solid rgba(0, 0, 0, 0.0625);
+            //     border-radius: 2px;
+            //     box-shadow: none;
+            //     height: 35px;
+            //     font-size: 14px;
+            //     padding: 5px;
+            //     margin-left: 5px;
+            //     margin-right: 5px;
+            //     color: #72777a;
+            //     width: 250px;
+            //     transition: all 0.2s ease-in;
+            // }
+
+            label {
+                font-size: 14px;
+                color: #313435;
+            }
+        }
+
+        // .item {
+        //     label {
+        //         font-weight: bold;
+        //     }
+        // }
+
+        .table {
+            // background-color: #acaaaa;
+            cursor: pointer;
+            // margin-top: 10px;
+            height: 70vh;
+            overflow-y: auto;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                /* Bỏ border ngang và ngăn cách giữa dòng */
+                border-spacing: 0;
+                // margin: 20px;
+                // margin-right: 50px;
+                position: relative;
+                /* Để có thể định vị pseudo-element */
+
+
+                th,
+                td {
+                    border: none;
+                    /* Bỏ border ngang */
+                    // border-bottom: 1px solid #ccc;
+                    /* Thêm border trái cho cột đầu tiên */
+                    padding: 12px 8px;
+                    text-align: left;
+                    position: relative;
+
+                    /* Để có thể định vị pseudo-element */
+                    button {
+                        padding: 2px 5px;
+                        margin-left: 2px;
+                    }
+                }
+
+                th {
+                    border-bottom: 1px solid black;
+                    background-color: #f8f8f8;
+                    font-weight: bold;
+                    position: relative;
+                    /* Để có thể định vị pseudo-element */
+                }
+
+                tr:nth-child(odd) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #ffffff;
+                }
+
+                tr:hover {
+                    background-color: #fafafa;
+                }
+
+                th::after,
+                td::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 1px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    /* Màu border dọc mờ */
+                }
+
+                th::after {
+                    right: -10px;
+                    /* Điều chỉnh vị trí của border dọc mờ phía bên phải cột th */
+                }
+
+                td::after {
+                    left: -10px;
+                    /* Điều chỉnh vị trí của border dọc mờ phía bên trái cột td */
+                }
+
+                thead th::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: -10px;
+                    /* Điều chỉnh vị trí của border dọc mờ bên trái cột th trong thead */
+                    width: 1px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    /* Màu border dọc mờ */
+                }
+            }
+        }
+
+
+        .page {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            ul {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style: none;
+
+                    button {
+                        padding: 7px 12px;
+                        border: none;
+                        outline: 1px solid #acaaaa;
+                    }
+                }
+            }
+
+            .pageSelected {
+                background-color: #7774e7;
+                color: white;
+            }
+
+        }
+    }
+
+}
+
+
+
+//css modal
+
+.modalWrapper {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.15);
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .container {
+
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+        font-size: 14px;
+        color: #72777a;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        max-height: 80vh;
+        overflow: auto;
+
+        .title {
+            color: #313435;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .form {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                gap: 10%;
+
+                .formGroup {
+                    margin-top: 20px;
+                    width: 100%;
+
+                    label {
+                        margin-bottom: 0.5rem;
+                    }
+
+                    input,
+                    select {
+                        display: block;
+                        width: 100%;
+                        padding: 0.375rem 0.75rem;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        color: #212529;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 1px solid #ced4da;
+                        border-radius: 0.25rem;
+                    }
+                }
+
+                .formGroupBtn {
+                    margin-top: 40px;
+                    width: 100px;
+
+
+                    button {
+                        width: 100px;
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
+
+        .formGroup {
+            margin-top: 20px;
+
+            label {
+                margin-bottom: 0.5rem;
+            }
+
+            input,
+            select {
+                display: block;
+                width: 100%;
+                padding: 0.375rem 0.75rem;
+                font-size: 0.875rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+            }
+        }
+
+        .selectedItems {
+            margin-top: 20px;
+
+            label {
+                margin-bottom: 0.5rem;
+            }
+
+            /* CSS cho bảng stripedTable */
+            .stripedTable {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .stripedTable th,
+            .stripedTable td {
+                padding: 10px;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+
+            .stripedTable th {
+                background-color: #f2f2f2;
+                /* Màu nền cho header */
+                font-weight: bold;
+            }
+
+            .stripedTable tbody tr:nth-child(even) {
+                background-color: #f2f2f2;
+                /* Màu nền cho hàng chẵn */
+            }
+
+            .stripedTable tbody tr:nth-child(odd) {
+                background-color: #ffffff;
+                /* Màu nền cho hàng lẻ */
+            }
+
+            .stripedTable button {
+                background-color: #ff0000;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                padding: 5px 10px;
+            }
+
+            .stripedTable button:hover {
+                background-color: #cc0000;
+            }
+
+
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    width: 30%;
+                    margin-top: 10px;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    button {
+                        padding: 2px 7px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+
+        .buttonSubmit {
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #2196f3;
+            border-color: #2196f3;
+            color: #fff;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .modal-wrapper p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btnSave {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+//css modal update
+
+.modalWrapperUpdate {
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.15);
+    padding: 20px;
+    max-height: 80vh;
+    overflow: auto;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .container {
+
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+
+        font-size: 14px;
+        color: #72777a;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+
+        .title {
+            color: #313435;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .form {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                gap: 10%;
+
+                .formGroup {
+                    margin-top: 20px;
+                    width: 100%;
+
+                    label {
+                        margin-bottom: 0.5rem;
+                    }
+
+                    input,
+                    select {
+                        display: block;
+                        width: 100%;
+                        padding: 0.375rem 0.75rem;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        color: #212529;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 1px solid #ced4da;
+                        border-radius: 0.25rem;
+                    }
+                }
+
+                .formGroupBtn {
+                    margin-top: 40px;
+                    width: 100px;
+
+
+                    button {
+                        width: 100px;
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
+
+        .formGroup {
+            margin-top: 20px;
+
+            label {
+                margin-bottom: 0.5rem;
+            }
+
+            input,
+            select {
+                display: block;
+                width: 100%;
+                padding: 0.375rem 0.75rem;
+                font-size: 0.875rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+            }
+        }
+
+        .selectedItems {
+            margin-top: 20px;
+
+            label {
+                margin-bottom: 0.5rem;
+            }
+
+            /* CSS cho bảng stripedTable */
+            .stripedTable {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .stripedTable th,
+            .stripedTable td {
+                padding: 10px;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+
+            .stripedTable th {
+                background-color: #f2f2f2;
+                /* Màu nền cho header */
+                font-weight: bold;
+            }
+
+            .stripedTable tbody tr:nth-child(even) {
+                background-color: #f2f2f2;
+                /* Màu nền cho hàng chẵn */
+            }
+
+            .stripedTable tbody tr:nth-child(odd) {
+                background-color: #ffffff;
+                /* Màu nền cho hàng lẻ */
+            }
+
+            .stripedTable button {
+                background-color: #ff0000;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                padding: 5px 10px;
+            }
+
+            .stripedTable button:hover {
+                background-color: #cc0000;
+            }
+
+
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    width: 30%;
+                    margin-top: 10px;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    button {
+                        padding: 2px 7px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+
+        .buttonSubmit {
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #2196f3;
+            border-color: #2196f3;
+            color: #fff;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .modal-wrapper p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btnSave {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    }
+}
+
+.modalOverlayUpdate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+
+//css modal msg
+
+.modalWrapperMsg {
+    position: absolute;
+    z-index: 12;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.15);
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+    .modal-wrapper p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btnSave {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    }
+}
+
+.modalOverlayMsg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+}
+
+.errorMessage {
+    color: #dc3545;
+    font-weight: 400;
+}

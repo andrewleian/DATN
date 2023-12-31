@@ -1,0 +1,394 @@
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #f1f1f1;
+    position: relative;
+
+    .header {
+        margin-top: 20px;
+
+        ul {
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            li {
+                list-style: none;
+
+                button {
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .danhSach {
+        padding: 20px 1%;
+
+        .rowSpaceBettween {
+            display: flex;
+            justify-content: space-between;
+
+            select {
+                width: 50px;
+                height: 25px;
+            }
+
+            input {
+                width: 250px;
+                height: 25px;
+                padding-left: 10px;
+                font-size: 19px;
+            }
+        }
+
+        .item {
+            label {
+                font-weight: bold;
+            }
+        }
+
+        .table {
+            margin-top: 10px;
+            height: 70vh;
+            overflow-y: auto;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                overflow-y: auto;
+
+            }
+
+            th,
+            td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                border: 1px solid #ddd;
+                text-align: center;
+
+                img {
+                    width: 50px;
+                }
+
+                button {
+                    border: none;
+                    margin: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            th {
+                background-color: #f15e2c;
+            }
+        }
+
+
+        .page {
+            margin-top: 20px;
+            display: flex;
+            justify-content: right;
+
+            ul {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style: none;
+
+                    button {
+                        padding: 7px 12px;
+                        border: none;
+                        outline: 1px solid #acaaaa;
+                        background-color: #fff;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    button:hover {
+                        background-color: #5293f5;
+                    }
+                }
+            }
+
+            .pageSelected {
+                background-color: #0d6efd;
+                color: white;
+            }
+        }
+
+    }
+
+    .displayAddnew {
+
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        .addNew {
+            width: 80%;
+            margin: auto;
+            padding: 2%;
+            background-color: #acaaaa;
+
+            .title {
+                p {
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+
+            .row3SB {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .item {
+                    margin-top: 15px;
+                    width: 30%;
+
+                    .successMessage {
+                        color: #198754;
+                        font-weight: 400;
+                    }
+
+                    .errorMessage {
+                        color: #dc3545;
+                        font-weight: 400;
+                    }
+
+                    label {
+                        display: block;
+                        margin-bottom: 5px;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        height: 30px;
+                        width: 100%;
+                    }
+
+                    select {
+                        height: 30px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .flex {
+                margin-top: 20px;
+                display: flex;
+                justify-content: right;
+                gap: 10px;
+
+                button {
+                    padding: 5px 15px;
+                }
+            }
+        }
+
+
+    }
+
+    .displayImportExcel {
+
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        .importExcel {
+            width: 80%;
+            margin: auto;
+            padding: 2%;
+            background-color: #f1f1f1;
+
+            .status {
+                .StatusCuccess {
+                    // display: none;
+                    background-color: #198754;
+                    margin-bottom: 15px;
+
+                    p {
+                        font-size: 20px;
+                        padding: 15px;
+                        color: white;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .item {
+                margin-top: 20px;
+                text-align: center;
+
+                label {
+                    font-weight: bold;
+                    margin-right: 15px;
+                }
+
+
+
+                button {
+                    padding: 3px 10px;
+                }
+
+            }
+
+            .data {
+                margin-top: 10px;
+                border: 1px solid #ddd;
+
+                p {
+                    background-color: #d7d3d3;
+                    padding: 10px;
+                    font-size: 20px;
+                }
+
+                table {
+                    width: 95%;
+                    margin: auto;
+                    margin-top: 15px;
+                    border-collapse: collapse;
+                    overflow-y: auto;
+
+
+                    tr:nth-child(even) {
+                        background-color: #f2f2f2;
+                    }
+
+                    tr:nth-child(odd) {
+                        background-color: #ffffff;
+                    }
+
+                    th,
+                    td {
+                        padding: 8px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                        // border: 1px solid #ddd;
+
+                        img {
+                            width: 50px;
+                        }
+                    }
+
+                    th {
+                        background-color: #f15e2c;
+                    }
+
+
+                }
+
+                .page {
+                    width: 95%;
+                    margin: auto;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: right;
+
+                    ul {
+                        padding: 10px 0 10px 10px;
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            list-style: none;
+
+                            button {
+                                padding: 7px 12px;
+                                border: none;
+                                outline: 1px solid #acaaaa;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+//css modal
+
+.modalWrapper {
+    position: absolute;
+    z-index: 99999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.15);
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modal-wrapper p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btnSave {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+}

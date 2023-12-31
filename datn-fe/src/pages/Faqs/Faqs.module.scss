@@ -1,0 +1,125 @@
+.container {
+    width: 64%;
+    margin: auto;
+    margin-bottom: 50px;
+
+    .mainTitle {
+        padding: 40px 0;
+
+
+        p {
+            width: 100%;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+        }
+    }
+
+    .row {
+        .borderSolidBot {
+            border: solid #808080 3px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+    }
+
+    .row {
+
+        display: flex;
+        justify-content: space-between;
+
+        .col1 {
+            width: 23%;
+            text-align: center;
+
+
+            .item {
+                background-color: #f1f1f1;
+                margin: auto;
+                padding: 40px 7.5% 0 7.5%;
+
+                .icon {
+                    font-size: 50px;
+                    cursor: pointer;
+                }
+
+                .title {
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                .description {
+                    margin-top: 20px;
+                    font-size: 17px;
+                    color: #808080;
+                    padding-bottom: 40px;
+                    border: dashed #808080 2px;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    cursor: pointer;
+                }
+
+            }
+
+            .item:last-child {
+                .description {
+                    border: none;
+                }
+            }
+        }
+
+        .col2 {
+            width: 72%;
+            // transition: all 0.1s ease;
+            .item {
+                // transition: all 0.1s ease;
+                padding: 35px 0;
+                border: dashed #808080 2px;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+
+                .title {
+                    font-size: 21px;
+                    font-weight: bold;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+
+                .child {
+                    margin-top: 35px;
+                    padding-top: 35px;
+                    border: dashed #808080 2px;
+                    border-left: 0;
+                    border-right: 0;
+                    border-bottom: 0;
+                    font-size: 15.5px;
+                    line-height: 23px;
+                    color: #555;
+
+                    strong {
+                        font-size: 18px;
+                        color: #000;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    ul {
+                        margin-left: 70px;
+                    }
+                }
+            }
+
+            .item:last-child {
+                border: 0;
+            }
+        }
+    }
+}

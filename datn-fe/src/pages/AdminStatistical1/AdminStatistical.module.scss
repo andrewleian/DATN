@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  // margin: 20px auto auto auto;
+  padding-left: 50px;
+  padding-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  background-color: #c5cbe8;
+  font-family: "Number Fonts", sans-serif;
+  font-size: 20px;
+}
+.body {
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #99c2d1;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #2e5563;
+  margin-bottom: 10px;
+}
+.cardIcon {
+  // width: 200%;
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+
+.cardTitle {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.cardData {
+  font-size: 18px;
+}
+.titleReport {
+  font-weight: 500;
+  color: #2e5563;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.datePicker {
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.doanhThuChart {
+  padding-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.lineChart {
+  width: 100%;
+  // height: 600px;
+  background-color: #ffffff;
+  // border: 1px solid #99c2d1;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.pieChart {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}

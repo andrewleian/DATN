@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 48px;
+    }
+  </style>
+</head>
+<body>
+<!--Nội dung email muốn gửi-->
+<!--có thể tạo ra các template tương tự để phục vụ cho việc gửi email khác như đơn hàng thành công, quên mật khẩu, đăng kí,..-->
+<p th:text="${'Xin chào, ' + name}"></p>
+<p> Chúng tôi gửi thông tin truy cập hệ thống của bạn: </p>
+
+<p>Xin chúc mừng ban đã đặt đơn hàng thành công!</p>
+<p th:text="${'- Mã đơn hàng: ' + billCode}"></p>
+<p th:text="${'- Trạng thái đơn hàng của bạn là: ' + status}"></p>
+<p th:text="${'- Số điện thoại giao hàng: ' + phone}"></p>
+<p th:text="${'- Địa chỉ giao hàng: ' + address}"></p>
+<p th:text="${'- Tổng hoá đơn: ' + total_payment + ' VND'}"></p>
+<p th:text="${'- Ngày mua: ' + create_at}"></p>
+<p>Ngày dự kiến giao hàng là từ 3-7 ngày tính từ ngày đặt hàng</p>
+<p>Thông tin đơn hàng chi tiết vui lòng truy cập vào website phần lịch sử đơn hàng để biết thêm chi tiết</p>
+
+<p> Xin cảm ơn bạn đã đặt hàng tại shop!</p>
+<p>Đây là email tự động vui lòng không trả lời.</p>
+</body>
+</html>

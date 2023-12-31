@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  padding: 15px;
+  // grid-template-columns: 1fr 1fr;
+  // justify-content: space-between;
+  background-color: #d3d7ec;
+  // font-family: "Number Fonts", sans-serif;
+  display: flex;
+}
+.info {
+  // font-size: 20px;
+  width: 100%;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.bill {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  background-color: white;
+  height: 400px;
+}
+.newBill {
+  display: flex;
+  align-items: center;
+}
+.customer {
+  padding-left: 10px;
+  background-color: white;
+}
+.tabHeader {
+  display: flex;
+  align-items: center;
+}
+.tabTitle {
+  // font-size: 20px;
+  font-weight: 400;
+}
+.tabSearch {
+  white-space: pre;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  ::placeholder {
+    color: rgb(78, 75, 75);
+    // font-size: 20px;
+  }
+}
+// .customSelect .ant-select-search__field {
+//   white-space: pre;
+// }
+.detailBill {
+  padding: 10px;
+  background-color: white;
+  margin-left: 5px;
+  height: 50%;
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.rowCus {
+  margin-bottom: 13px;
+  padding-right: 10px;
+}
+.colCus {
+  padding-left: 10px;
+}
+.cusInfo {
+  width: 100%;
+  ::placeholder {
+    color: rgb(172, 172, 172);
+    font-size: 15px;
+  }
+}
+.closeTab {
+  position: absolute;
+  top: 1;
+  right: 10;
+  padding: 4px;
+  cursor: pointer;
+  margin-left: 3px;
+  font-size: 10px;
+  align-items: baseline;
+}

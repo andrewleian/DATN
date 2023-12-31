@@ -1,0 +1,419 @@
+.container {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1 {
+    width: 55%;
+
+    .title {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 100%;
+        background-color: #f1f1f1;
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 0px 10px 20px;
+
+        }
+    }
+
+    .customerInfor {
+        .successMessage {
+            color: #198754;
+            font-weight: 400;
+            margin: 35px 0px 0px 10px;
+        }
+
+        .errorMessage {
+            color: #dc3545;
+            font-weight: 400;
+            margin: 35px 0px 0px 10px;
+        }
+
+
+        input {
+            width: 80%;
+            height: 35px;
+            padding-left: 10px;
+            display: block;
+            font-size: 18px;
+            margin: 35px 0px 0px 10px;
+            background-color: #fff;
+        }
+
+        select {
+            width: 80%;
+            height: 35px;
+            padding-left: 10px;
+            display: block;
+            font-size: 18px;
+            margin: 35px 0px 0px 10px;
+            background-color: #fff;
+        }
+
+
+
+        .row {
+            width: 80%;
+            margin: 35px 0px 0px 10px;
+
+            input {
+                width: 47%;
+                margin: 0;
+            }
+
+            select {
+                width: 47%;
+                margin: 0;
+            }
+
+            .ward,
+            .district {
+                width: 47%;
+                margin: 0;
+
+                select {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                label {
+                    margin: 0;
+
+                }
+            }
+        }
+
+        .checkbox {
+            margin: 30px 0px 0px 10px;
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 20px;
+                margin: 0;
+            }
+
+            label {
+                margin-left: 20px;
+                font-size: 17px;
+            }
+        }
+
+        .formGroup {
+            .inputWithIcon {
+                margin-top: 25px;
+                position: relative;
+
+                .iconLeft {
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        left: 10px;
+                        transform: translateY(-50%);
+                        padding-bottom: 10px;
+                    }
+                }
+
+
+
+                input {
+                    width: 84%;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    border-bottom: 1px solid black;
+                    outline: none;
+                    background: none;
+                    color: black;
+                    padding-left: 30px;
+                    padding-bottom: 10px;
+
+                }
+
+                input::placeholder {
+                    font-size: 14px;
+                    /* Điều chỉnh font size theo mong muốn */
+                }
+
+                .iconRightCorrect {
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: 60px;
+                        transform: translateY(-50%);
+                        padding-bottom: 10px;
+                        color: #007c00;
+                    }
+                }
+
+                .iconRightWrong {
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: 60px;
+                        transform: translateY(-50%);
+                        padding-bottom: 10px;
+                        color: red;
+                    }
+                }
+
+                .iconRightPassword {
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: 60px;
+                        transform: translateY(-50%);
+                        padding-bottom: 10px;
+                    }
+                }
+
+
+            }
+
+            .errorMessage {
+                color: red;
+            }
+        }
+
+    }
+
+
+    .paymentMethod,
+    .deliveryMethod {
+        .checkbox {
+            margin: 20px 0px 0px 10px;
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 20px;
+                height: 30px;
+                margin: 0;
+            }
+
+            label {
+                margin-left: 20px;
+                font-size: 17px;
+            }
+        }
+    }
+
+
+
+
+}
+
+.col2 {
+    margin-top: 30px;
+    width: 40%;
+
+    .background {
+        background-color: #f1f1f1;
+        padding-bottom: 30px;
+    }
+
+    .product,
+    .order,
+    .totalOrder,
+    .discount,
+    .payment,
+    .transpotFee,
+    .paymentFee,
+    .total {
+        width: 90%;
+        margin: auto;
+    }
+
+    .order {
+        padding-top: 10px;
+        border: solid 2px #a3a3a3;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    }
+
+    .product {
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        .row {
+            margin-top: 5px;
+
+            p {
+                display: inline-block;
+                color: #808080;
+                font-size: 19px;
+                font-weight: bold;
+            }
+
+            .productName,
+            .productSize {
+                width: 70%;
+            }
+
+            .productPrice {
+                float: right;
+            }
+
+            .productSize {
+                font-weight: lighter;
+            }
+
+            .productQuantity {
+                width: 30%;
+                font-weight: lighter;
+            }
+        }
+    }
+
+
+    .totalOrder,
+    .discount,
+    .transpotFee,
+    .paymentFee,
+    .total {
+        display: flex;
+        justify-content: space-between;
+        line-height: 30px;
+
+        p {
+            color: #808080;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        span {
+            color: #808080;
+            font-size: 19px;
+            font-weight: lighter;
+        }
+    }
+
+    .totalOrder {
+        margin-top: 25px;
+        padding-top: 40px;
+        border: dashed 2px #a3a3a3;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .paymentFee {
+        padding-bottom: 40px;
+        border: dashed 2px #a3a3a3;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+
+    }
+
+    .total {
+        margin: 30px auto;
+
+        p {
+            color: #808080;
+        }
+
+        span {
+            color: #f15e2c;
+
+        }
+    }
+
+    .payment {
+        button {
+            width: 100%;
+            height: 77px;
+            background-color: #f15e2c;
+            border: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c94b20;
+            cursor: pointer;
+        }
+    }
+
+}
+
+//css modal
+
+.modalWrapper {
+    position: absolute;
+    z-index: 99999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.15);
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modal-wrapper p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btnSave {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+}

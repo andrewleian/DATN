@@ -1,0 +1,212 @@
+.container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    overflow: visible;
+
+}
+
+.headerStart {
+    // width: 10%;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 150px;
+    }
+
+    cursor: pointer;
+}
+
+.imgLogo {
+    width: 120px;
+}
+
+.headerMid {
+    // width: 50%;
+}
+
+.ulMid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // gap: 15px;
+}
+
+.liMid {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 0 17px;
+
+    // img {
+    //     position: absolute;
+    //     top: -19px
+    // }
+}
+
+.borderLi {
+    border: solid;
+    border-width: 1px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #ff5f17;
+}
+
+.headerEnd {
+    display: flex;
+    // width: 25%;
+    justify-content: end;
+    position: relative;
+    float: right;
+
+    .dropdown {
+        display: flex;
+        justify-content: end;
+
+        .dropdownToggle {
+            .headerEndInput {
+                height: 37px;
+                width: 100%;
+                background-image: url('../../../assets/icons/search.png');
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+                background-position: 5px center;
+                padding-left: 25px;
+                border: solid;
+                border-width: 1px;
+                border-color: #555;
+                font-size: 16px;
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+        }
+
+        .dropdownMenu {
+            position: absolute;
+            z-index: 1000;
+            right: 5px;
+            padding: 0.5rem 0;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 0.25rem;
+            top: 37px;
+            right: 0px;
+            display: none;
+            width: 500px;
+            //
+            transition: opacity 0.3s, transform 0.3s;
+            opacity: 0;
+            /* Ban đầu ẩn dropdown */
+            transform: translateY(-10px);
+            /* Di chuyển dropdown lên trên để ẩn */
+
+            /* Khi dropdown được hiển thị */
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+
+
+            .blankProduct {
+                margin: 20px 0;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            li {
+                width: 500px;
+                margin-top: 20px;
+
+
+                .row2 {
+                    display: flex;
+
+                    .col1 {
+                        width: 100px;
+                        max-height: 100px;
+                        margin-left: 20px;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+
+                    .col2 {
+                        margin-left: 20px;
+                        width: 340px;
+                        max-height: 100px;
+
+                        .name {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 20px;
+                            font-weight: 400;
+                            width: 340px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .status {
+                            margin-top: 7px;
+                            color: #2196F3;
+                            font-weight: 400;
+                            font-size: 15px;
+                        }
+
+                        .color {
+                            margin-top: 7px;
+                            font-weight: 400;
+                            font-size: 15px;
+                        }
+
+                        .price {
+                            margin-top: 7px;
+                            color: #F44336;
+                            font-weight: 400;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+
+            li:hover {
+                cursor: pointer;
+            }
+
+            .divider {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+                height: 1px;
+            }
+        }
+    }
+
+}
+
+
+
+input::placeholder {
+    font-size: 16px;
+}

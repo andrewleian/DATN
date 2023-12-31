@@ -1,0 +1,251 @@
+.container {
+    width: 80%;
+    margin: auto;
+
+
+    .title {
+        margin: 20px;
+
+        p {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+
+    .form1 {
+        width: 90%;
+        margin: auto;
+
+        .row2SB {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .item {
+                width: 20%;
+                border: 1px solid #333;
+                padding: 10px;
+
+                .successMessage {
+                    color: #198754;
+                    font-weight: 400;
+                }
+
+                .errorMessage {
+                    color: #dc3545;
+                    font-weight: 400;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                input {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                select {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                .rowForm {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    select {
+                        height: 30px;
+                    }
+
+                    button {
+                        margin-left: 5%;
+                        height: 30px;
+                        width: 60px;
+                        padding: 6x 12px;
+                    }
+                }
+            }
+        }
+
+        .formAction {
+            margin: 20px 0;
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+
+            button {
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    .form2 {
+        width: 90%;
+        margin: auto;
+
+        .row2SB {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .item {
+                width: 20%;
+                border: 1px solid #333;
+                padding: 10px;
+
+                .successMessage {
+                    color: #198754;
+                    font-weight: 400;
+                }
+
+                .errorMessage {
+                    color: #dc3545;
+                    font-weight: 400;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                input {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                select {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                .rowForm {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    select {
+                        height: 30px;
+                    }
+
+                    button {
+                        margin-left: 5%;
+                        height: 30px;
+                        width: 60px;
+                        padding: 6x 12px;
+                    }
+                }
+            }
+        }
+
+        .formAction {
+            margin: 20px 0;
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+
+            button {
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    .form3 {
+        width: 90%;
+        margin: auto;
+
+        .row2SB {
+            margin-top: 20px;
+            // display: flex;
+            // justify-content: space-between;
+            // flex-wrap: wrap;
+
+            .item {
+                width: 20%;
+                border: 1px solid #333;
+                padding: 10px;
+
+                .successMessage {
+                    color: #198754;
+                    font-weight: 400;
+                }
+
+                .errorMessage {
+                    color: #dc3545;
+                    font-weight: 400;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                input {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                select {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                .rowForm {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    select {
+                        height: 30px;
+                    }
+
+                    button {
+                        margin-left: 5%;
+                        height: 30px;
+                        width: 60px;
+                        padding: 6x 12px;
+                    }
+                }
+            }
+        }
+
+        ul {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            li {
+                width: 30%;
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                button{
+                    padding: 0 5px;
+                }
+            }
+        }
+
+        .formAction {
+            margin: 20px 0;
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+
+            button {
+                padding: 6px 12px;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  background-color: #f1f1f1;
+
+  ul {
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+    // padding: 10px 0;
+    li {
+      display: inline;
+      padding: 12px 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .link {
+      padding: 12px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .headerActive {
+      background-color: #f15e2c;
+    }
+  }
+}

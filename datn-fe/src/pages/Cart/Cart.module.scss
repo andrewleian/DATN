@@ -1,0 +1,526 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+
+    .col1 {
+        width: 65%;
+
+        .needMore {
+            height: 300px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        .cart {
+            margin-top: 50px;
+
+            .row {
+                display: flex;
+                align-items: center;
+                background-color: #f1f1f1;
+
+                .cbx {
+
+                    width: 5%;
+
+                    input {
+                        width: 100%;
+                        height: 20px;
+                    }
+                }
+
+                .cartTitle {
+                    width: 95%;
+                    background-color: #f1f1f1;
+
+                    p {
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+
+            .select {
+                margin: 20px 0;
+                padding: 20px;
+                background-color: #a79b9b;
+
+                button {
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    margin-right: 20px;
+                }
+
+            }
+
+
+
+            .item {
+                border: 1px solid rgb(176, 170, 170);
+                padding-bottom: 20px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                // padding: 10px;
+                margin: 10px 0;
+
+                display: flex;
+                align-items: center;
+
+                .cbx {
+                    width: 5%;
+
+                    input {
+                        width: 100%;
+                        height: 20px;
+                    }
+                }
+
+                .ward {}
+
+                .product {
+                    width: 95%;
+                    display: flex;
+
+                    // margin-top: 20px;
+                    .productImg {
+                        width: 25%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .productDetails {
+                        width: 50%;
+                        margin-left: 2%;
+
+                        .name {
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+
+                        .price {
+                            padding-top: 10px;
+                            font-size: 17px;
+                            font-weight: bold;
+                            color: #808080;
+
+                            span {
+                                font-weight: lighter;
+                            }
+
+                            .promotionalPrice {
+                                padding: 9px 0;
+                                color: #888;
+                            }
+                    
+                            .realPrice {
+                                font-size: 15px;
+                                margin-left: 20px;
+                                padding: 9px 0;
+                                color: #888;
+                                text-decoration: line-through;
+                            }
+                        }
+
+                        // .displayBot {
+                        .row {
+                            background: none;
+
+                            .size {
+
+                                width: 40%;
+
+                                label {
+                                    display: block;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                }
+
+                                select {
+                                    width: 100%;
+                                    height: 35px;
+                                }
+                            }
+
+                            .quantity {
+                                width: 40%;
+
+                                label {
+                                    display: block;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    white-space: nowrap;
+                                }
+
+                                input {
+                                    width: 100%;
+                                    height: 35px;
+                                }
+                            }
+                        }
+
+                        // }
+
+
+
+                    }
+
+                    .other {
+                        width: 25%;
+                        text-align: right;
+
+                        .productTotal {
+                            font-size: 23px;
+                            font-weight: bold;
+                            color: #f15e2c;
+                            height: 30%;
+                        }
+
+                        .productStatus {
+                            height: 20%;
+                            color: #f15e2c;
+                        }
+
+                        .favorite {
+                            height: 22%;
+
+                            button {
+                                font-size: 20px;
+                                height: 100%;
+                                width: 60%;
+                                background: none;
+                                border: #a3a3a3 1px solid;
+                            }
+                        }
+
+                        .delete {
+                            margin-top: 6%;
+                            height: 22%;
+
+                            button {
+                                font-size: 20px;
+                                height: 100%;
+                                width: 60%;
+                                background-color: #ccc8c8;
+                                border: #a3a3a3 1px solid;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            button:hover {
+                                background-color: #a3a3a3;
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                }
+
+                .borderBot {
+                    margin-top: 20px;
+                    border: dashed 1px #a3a3a3;
+                }
+
+                .lastBorderBot {
+                    margin-top: 40px;
+                    border: solid 1px #a3a3a3;
+                }
+
+            }
+
+
+
+        }
+
+        .row {
+            margin-top: 80px;
+            margin-bottom: 30px;
+
+            button {
+                width: 30%;
+                padding: 15px 15px;
+                background-color: #303030;
+                border: none;
+                font-size: 17px;
+                font-weight: bold;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .linkButton {
+                width: 30%;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .col2 {
+        width: 30%;
+        margin-right: 3%;
+        background-color: #f1f1f1;
+        height: 390px;
+
+        .order {
+            width: 90%;
+            margin: auto;
+            margin-top: 10px;
+            border: solid 2px #a3a3a3;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+
+            p {
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px;
+            }
+        }
+
+        .promotionCode {
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+
+            label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            input {
+                width: 69%;
+                height: 35px;
+                border-radius: 0;
+                background-color: #fff;
+                border: 1px solid #ccc;
+            }
+
+            button {
+                width: 30%;
+                height: 35px;
+                border-radius: 0;
+                background-color: #f15e2c;
+                border: none;
+                font-weight: 700;
+            }
+        }
+
+        .totalOrder {
+            // width: 90%;
+            // margin: auto;
+            // margin-top: 25px;
+            // padding-top: 40px;
+            // display: flex;
+            // justify-content: space-between;
+            // border: dashed 2px #a3a3a3;
+            // border-bottom: 0;
+            // border-left: 0;
+            // border-right: 0;
+
+            width: 90%;
+            margin: auto;
+            margin-top: 25px;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                color: #808080;
+                font-size: 19px;
+                font-weight: bold;
+            }
+        }
+
+
+
+        .discount {
+            width: 90%;
+            margin: auto;
+            margin-top: 5px;
+            padding-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            border: dashed 2px #a3a3a3;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+
+            p {
+                color: #808080;
+                font-size: 19px;
+                font-weight: bold;
+
+
+            }
+
+            span {
+                color: #808080;
+                font-size: 19px;
+                font-weight: lighter;
+            }
+        }
+
+        .temporary {
+            width: 90%;
+            margin: auto;
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-weight: bold;
+                font-size: 19px;
+            }
+
+            span {
+                font-weight: bold;
+                font-size: 23px;
+            }
+        }
+
+
+        .continueOrderBtn {
+            width: 90%;
+            margin: auto;
+
+            button {
+                width: 100%;
+                height: 77px;
+                background-color: #f15e2c;
+                border: none;
+                font-size: 20px;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #c94b20;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .cart-icon {
+        position: relative;
+    }
+
+    .cartcount {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 12px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .carticon.animated .cart-count {
+        animation: bounce 0.3s;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+}
+
+//css modal
+
+.modalWrapper {
+    position: absolute;
+    z-index: 99999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(24, 24, 24, 0.15);
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modal-wrapper p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btnSave {
+            background-color: #4caf50;
+            color: #fff;
+        }
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+}

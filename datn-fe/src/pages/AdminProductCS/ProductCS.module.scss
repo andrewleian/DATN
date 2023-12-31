@@ -1,0 +1,453 @@
+.container {
+    width: 80%;
+    margin: auto;
+
+
+    .title {
+        margin: 20px;
+
+        p {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    }
+
+    .form {
+        width: 90%;
+        margin: auto;
+
+        .row4SB {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .item {
+                width: 20%;
+                border: 1px solid #333;
+                padding: 10px;
+
+                .successMessage {
+                    color: #198754;
+                    font-weight: 400;
+                }
+
+                .errorMessage {
+                    color: #dc3545;
+                    font-weight: 400;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                input {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                select {
+                    height: 30px;
+                    width: 100%;
+                }
+
+                .rowForm {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    select {
+                        height: 30px;
+                    }
+
+                    button {
+                        margin-left: 5%;
+                        height: 30px;
+                        width: 60px;
+                        padding: 6x 12px;
+                    }
+                }
+            }
+        }
+
+        .formAction {
+            margin: 20px 0;
+            display: flex;
+            justify-content: right;
+            gap: 20px;
+
+            button {
+                padding: 6px 12px;
+            }
+        }
+    }
+
+    .danhSach {
+        padding: 20px 1%;
+
+        .rowSpaceBettween {
+            display: flex;
+            justify-content: space-between;
+
+            select {
+                width: 50px;
+                height: 25px;
+            }
+
+            input {
+                width: 250px;
+                height: 25px;
+                padding-left: 10px;
+                font-size: 19px;
+            }
+        }
+
+        .table {
+            margin-top: 10px;
+            height: 50vh;
+            overflow-y: auto;
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                overflow-y: auto;
+            }
+
+            th,
+            td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+                border: 1px solid #ddd;
+                text-align: center;
+
+                img {
+                    width: 50px;
+                }
+
+                button {
+                    border: none;
+                    margin: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            th {
+                background-color: #f15e2c;
+            }
+        }
+
+
+        .page {
+            margin-top: 20px;
+            display: flex;
+            justify-content: right;
+
+            ul {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style: none;
+
+                    button {
+                        padding: 7px 12px;
+                        border: none;
+                        outline: 1px solid #acaaaa;
+                    }
+                }
+            }
+        }
+    }
+
+    .displayColor {
+
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .displayAddnew {
+
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background: rgba(0, 0, 0, 1);
+        background: rgb(218, 215, 215);
+        padding: 20px 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+        .container1 {
+            width: 80%;
+            margin: auto;
+
+
+            .title {
+                margin: 20px;
+
+                p {
+                    text-align: center;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+
+            .form1 {
+                width: 90%;
+                margin: auto;
+
+                .row2SB {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .item {
+                        width: 20%;
+                        border: 1px solid #333;
+                        padding: 10px;
+
+                        .successMessage {
+                            color: #198754;
+                            font-weight: 400;
+                        }
+
+                        .errorMessage {
+                            color: #dc3545;
+                            font-weight: 400;
+                        }
+
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                        }
+
+                        input {
+                            height: 30px;
+                            width: 100%;
+                        }
+
+                        select {
+                            height: 30px;
+                            width: 100%;
+                        }
+
+                        .rowForm {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            select {
+                                height: 30px;
+                            }
+
+                            button {
+                                margin-left: 5%;
+                                height: 30px;
+                                width: 60px;
+                                padding: 6x 12px;
+                            }
+                        }
+                    }
+                }
+
+                .formAction {
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: right;
+                    gap: 20px;
+
+                    button {
+                        padding: 6px 12px;
+                    }
+                }
+            }
+
+            .form2 {
+                width: 90%;
+                margin: auto;
+
+                .row2SB {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .item {
+                        width: 20%;
+                        border: 1px solid #333;
+                        padding: 10px;
+
+                        .successMessage {
+                            color: #198754;
+                            font-weight: 400;
+                        }
+
+                        .errorMessage {
+                            color: #dc3545;
+                            font-weight: 400;
+                        }
+
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                        }
+
+                        input {
+                            height: 30px;
+                            width: 100%;
+                        }
+
+                        select {
+                            height: 30px;
+                            width: 100%;
+                        }
+
+                        .rowForm {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            select {
+                                height: 30px;
+                            }
+
+                            button {
+                                margin-left: 5%;
+                                height: 30px;
+                                width: 60px;
+                                padding: 6x 12px;
+                            }
+                        }
+                    }
+                }
+
+                .formAction {
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: right;
+                    gap: 20px;
+
+                    button {
+                        padding: 6px 12px;
+                    }
+                }
+            }
+
+            .form3 {
+                width: 90%;
+                margin: auto;
+
+                .row2SB {
+                    margin-top: 20px;
+                    // display: flex;
+                    // justify-content: space-between;
+                    // flex-wrap: wrap;
+
+                    .item {
+                        width: 20%;
+                        border: 1px solid #333;
+                        padding: 10px;
+
+                        .successMessage {
+                            color: #198754;
+                            font-weight: 400;
+                        }
+
+                        .errorMessage {
+                            color: #dc3545;
+                            font-weight: 400;
+                        }
+
+                        label {
+                            display: block;
+                            margin-bottom: 5px;
+                            font-weight: bold;
+                        }
+
+                        input {
+                            height: 30px;
+                            width: 100%;
+                        }
+
+                        select {
+                            height: 30px;
+                            width: 100%;
+                        }
+
+                        .rowForm {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            select {
+                                height: 30px;
+                            }
+
+                            button {
+                                margin-left: 5%;
+                                height: 30px;
+                                width: 60px;
+                                padding: 6x 12px;
+                            }
+                        }
+                    }
+                }
+
+                ul {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: 30%;
+                        margin-top: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+
+                        button {
+                            padding: 0 5px;
+                        }
+                    }
+                }
+
+                .formAction {
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: right;
+                    gap: 20px;
+
+                    button {
+                        padding: 6px 12px;
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+}
